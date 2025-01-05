@@ -11,7 +11,7 @@ class Solution:
         for number, count in count.items(): # Iterate over HashMap Key : Value pairs
             freq[count].append(number)
 
-        # Iterate over the frequency array from len(freq) - 1 -> 0, (-1, 3rd aru)
+        # Iterate over the frequency array from len(freq) - 1 -> 0, (-1 in 3rd argument -> backwards)
         for i in range(len(freq) - 1, 0, -1):
             for number in freq[i]:
                 res.append(number)
