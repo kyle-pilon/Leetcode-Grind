@@ -1,5 +1,7 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        # This problem was silly, had to re-write the hashSet implementation for the final test case
+        # Exceeding time limit
         hashMap = collections.defaultdict(int)
         res = 0 
 
